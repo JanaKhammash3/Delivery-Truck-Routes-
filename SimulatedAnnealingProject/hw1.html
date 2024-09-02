@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRP Simulated Annealing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="control-panel">
+            <label for="truck-capacity">Truck Capacity:</label>
+            <input type="number" id="truck-capacity" value="100">
+            <label for="num-trucks">Number of Trucks:</label>
+            <input type="number" id="num-trucks" value="5">
+            <label for="weight">Delivery Point Weight:</label>
+            <input type="number" id="weight" value="10">
+            <button id="random-routes">Initialize Random Routes</button>
+            <button id="optimize-routes">Optimize Routes</button>
+            <div class="distance-info">
+                <hr>
+                <label id="random-route-distance">Random Route Distance: 0</label>
+                <div class="distance-info"></div>
+                <label id="optimal-route-distance">Optimal Route Distance: 0</label>
+            </div>
+            <hr>
+            <h3>Delivery Points</h3>
+            <ul id="delivery-point-list"></ul>
+        </div>
+        <div id="drawing-panel">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
